@@ -1,13 +1,26 @@
 import React from "react";
 import ClearIcon from '@material-ui/icons/Clear';import mew from '../../picture/mew.png'
 import metamask from '../../picture/metamask.png'
+import Backdrop from '../backdrop/Backdrop'
+
 import "./WalletConnect.css";
-function WalletConnect() {
+
+
+
+
+function WalletConnect({close}) {
+
+
   return (
+
+    <React.Fragment>
+      <Backdrop />
+
+      
     <div className="WalletConnect">
       
       <div className="slider_p">Connect a Wallet</div>
-     <ClearIcon style={{position: "absolute", top:"22px", right: "25px", cursor: "pointer"}} />
+     <ClearIcon onClick={close} style={{position: "absolute", top:"22px", right: "25px", cursor: "pointer"}} />
      <div className="mint_line mint_margin"></div>
       <div className="slider_p connect_P">Ethereum</div>
 
@@ -31,6 +44,7 @@ function WalletConnect() {
         </div>
       </div> 
     </div>
+    </React.Fragment>
   );
 }
 

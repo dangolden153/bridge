@@ -1,0 +1,61 @@
+.Phrase{
+    width: 597px;
+    padding: 20px 10px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phrase_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.phrase_header{
+    margin: unset;
+    color: #A7A5A6;
+}
+
+.textArea{
+    width: 90%;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 23px;
+    color: #A7A5A6;
+}
+
+.phrase_text{
+    font-size: 23px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #F2EA63;
+    width: 90%;
+    line-height: 1.7;
+}
+
+.phrase_btn{
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    background: #FF254B;
+    border: none;
+    cursor: pointer;
+}
+
+.red{
+    color: #FF254B;
+}
+
+.phrase_line{
+    height: 1px;
+    width: 90%;
+    background-color: white;
+    margin: 15px 0 40px;
+}

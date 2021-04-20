@@ -10,9 +10,11 @@ function Release() {
   const [text, setText] = useState("");
   const [state, setState] = useState(false);
   const [state1, setState1] = useState(false);
+  const [state2, setState2] = useState(false);
 
   const toggleBorder = () => setState(!state);
   const toggleBorder1 = () => setState1(!state1);
+  const toggleBorder2 = () => setState2(!state2);
 
   console.log(text)
 
@@ -49,9 +51,9 @@ function Release() {
       </div>
 
 
-      <div className={state ? "borderBlue" : "box"} onClick={toggleBorder}>
+      <div className={state2 ? "borderR" : " release_box"} onClick={toggleBorder2}>
         <div className="input_text">
-        <p className="release_p">Release to</p>
+        <p className="release_p">Releasing to</p>
         <input type="text" placeholder="Enter a Destination Bitcoin Address" className="release_input"/>
         </div>
         
