@@ -1,14 +1,15 @@
 import React, {useEffect} from 'react';
-
-import Demo_1 from './pages/Demo_1/Demo_1'
-
-
+import Homepage from './pages/homepage/homepage' 
+import UpNav from './components/UpNav/UpNav'
+import Mint_history from './components/Mint_history/Mint_history'
 
 import './App.css';
 
 const App =()=>(
-  <div>
-    <Demo_1/>
+  <div className="App">
+    <UpNav />
+   <Homepage />
+   {/* <Mint_history /> */}
   </div>
 )
 export default App;

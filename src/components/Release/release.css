@@ -1,0 +1,14 @@
+.input{
+    font-size: 48px;
+    text-align: center;
+    border: navajowhite;
+    outline: none;
+    color:#3F3F48;
+}
+
+.input_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}

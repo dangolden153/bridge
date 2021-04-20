@@ -1,0 +1,44 @@
+.WalletConnect{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    background: #FFFFFF;
+    padding: 20px 0px 146px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 70%);
+    
+}
+
+.connect_P{
+    align-self: start;
+    margin-left: 39px;
+    margin-bottom: 24px;
+    cursor: unset;
+}
+
+.margin{
+    margin: unset;
+}
+
+.wallet_img{
+    width: 40px;
+    object-fit: contain;
+}
+
+.wallet_img_text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.padding{
+    padding: 9px 17px;
+}
+
+.mint_margin{
+    margin-bottom: 30px;
+}

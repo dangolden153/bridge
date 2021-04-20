@@ -1,0 +1,127 @@
+.upav_container{
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+}
+
+.left_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    padding: 0 20px;
+}
+
+.logo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_svg{
+    margin-left: 35px;
+    width: 41px;
+    height: 41px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.logo_Span{
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #DBE0E8;
+
+}
+
+.home_svg:hover{
+    background-color: #DBE0E8;
+}
+
+.logo_text{
+    margin: unset;
+    font-size: 27px;
+    color: #3F3F41;
+}
+
+
+.logo_svg_container{
+    border-radius: 8px;
+    padding: 1px 4px;
+    border: 2px solid #A4A4A8;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: #A4A4A8;
+}
+
+.logo_svg{
+    margin: unset;
+}
+
+
+
+.right_upnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 302px;
+    padding: 0 20px;
+}
+
+.svg{
+    /* width: 41px;
+    height: 41px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: unset;
+}
+
+.right_text{
+    margin-left: 30px;
+    padding: 6px 16px;
+    min-width: 64px;    
+    box-shadow: 0px 0px 3px 0px rgb(0, 27, 58, .10);
+    border-color: #DBE0E8;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #001933;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
+
+.right_text_ball{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #f44336;
+}
+
+.right_text_p{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+ .right_text:hover{
+    
+    background-color: #DBE0E8;
+   
+
+} 

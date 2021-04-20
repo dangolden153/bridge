@@ -1,7 +1,17 @@
 .App {
 position: relative;
 height: 100vh;
+background-color: #F2F2F2;
+
 
 }
 
+.color{
+    color:  #87888C;
+    color: #3F3F48;
+    color: #001933;
+    color: #0064CF;
+    color: #DBDBDC;
+  
+}
 
