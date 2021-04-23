@@ -1,8 +1,13 @@
+.WalletConnect_container{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .WalletConnect{
     position: fixed;
-    position: fixed;
     top: 18vh;
-    left: 32%;
+    /* left: 32%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,3 +50,18 @@
 .mint_margin{
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 700px) {
+    .WalletConnect{
+        max-width: 340px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .WalletConnect{
+        width: 322px;
+    }
+}
+
+
+

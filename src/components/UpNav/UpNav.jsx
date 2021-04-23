@@ -1,9 +1,24 @@
-import React from 'react'
+import React,{useState} from 'react'
 import HomeIcon from '@material-ui/icons/Home';import './UpNav.css'
 import ListIcon from '@material-ui/icons/List';
+import WalletConnect from "../WalletConnect/WalletConnect";
+import {Link} from 'react-router-dom'
+
 function UpNav() {
 
+
+   const [state, setState] = useState(false)
+
+
+   const openState =()=> setState(true)
+   const closeState =()=> setState(false
+    
+    )
     return (
+        <React.Fragment>
+
+     {state && <WalletConnect onCancel={closeState} />}
+
         <div className="upav_container">
 
             <div className="left_nav">
@@ -15,9 +30,9 @@ function UpNav() {
             </div>
 
             <div className="home_svg">
-            <span className="logo_Span">
-            <HomeIcon />
-            </span>
+            <Link className="link" className="logo_Span">
+            <HomeIcon style={{color: "black"}} />
+            </Link>
             </div>
 
             </div>    
@@ -34,10 +49,12 @@ function UpNav() {
         </div>
         <div className="right_text">
             <div className="right_text_ball"></div>
-            <p className="right_text_p">Connect a Wallet</p>
+            <p className="right_text_p" onClick={openState}>Connect a Wallet</p>
         </div>
         </div>
         </div>
+
+        </React.Fragment>
     )
 }
 

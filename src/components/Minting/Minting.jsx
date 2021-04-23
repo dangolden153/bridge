@@ -19,7 +19,7 @@ function Minting() {
 
   return (
     <React.Fragment>
-      {overlay && <WalletConnect close={toggleOffOverlay} />}
+      {overlay && <WalletConnect onCancel={toggleOffOverlay} />}
 
       <div className="minting_form">
         <p className="mint_text">
@@ -27,7 +27,7 @@ function Minting() {
         </p>
 
         <div className={state ? "borderBlue" : "box"} onClick={toggleBorder}>
-          <p className="box_p">send</p>
+          <p className="box_p" style={{width: "70px"}} >Send</p>
 
           <div className="img_text">
             <img src={btc_logo} alt="" className="coin_img" />
@@ -39,7 +39,7 @@ function Minting() {
         </div>
 
         <div className={state1 ? "borderBlue" : "box"} onClick={toggleBorder1}>
-          <p className="box_p">send</p>
+          <p className="box_p">Destination</p>
 
           <div className="img_text">
             <span className="eth_svg_cont">

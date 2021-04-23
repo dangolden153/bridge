@@ -15,7 +15,7 @@ function Form() {
           
             <div className="slider">
             <div className="slider_p" onClick={openMint}>Mint</div>
-            <div className="slider_p slider__p" onClick={openReleasing}>Release</div>  
+            <div className="slider_p slider__p" onClick={openReleasing}>{state ? "Release" : "Releasing"}</div>  
              </div>
 
              <div className="mint_container">

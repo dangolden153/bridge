@@ -3,6 +3,7 @@ import btc_logo from "../../picture/BTC_Logo.svg";
 import eth_logo from "../../picture/Eth.svg";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
+import WalletConnect from "../WalletConnect/WalletConnect";
 
 import "./release.css";
 
@@ -11,14 +12,25 @@ function Release() {
   const [state, setState] = useState(false);
   const [state1, setState1] = useState(false);
   const [state2, setState2] = useState(false);
+  const [overlay, setOverlay] = useState(false);
 
   const toggleBorder = () => setState(!state);
   const toggleBorder1 = () => setState1(!state1);
   const toggleBorder2 = () => setState2(!state2);
 
-  console.log(text)
+  const openOverlay = () => setOverlay(true);
+  const closeOverlay = () => setOverlay(false);
+
+
+
+
 
   return (
+
+    <React.Fragment>
+      {overlay && <WalletConnect onCancel={closeOverlay} /> }
+
+      
     <div className="minting_form">
       <input value={text} onChange={e => setText(e.target.value)} type="text" placeholder="0 renBTC" className="input" />
       <p className="mint_text">= $0.00</p>
@@ -61,8 +73,9 @@ function Release() {
 
       <div className="mint_line"></div>
 
-      <button className="mint_btn">Connect Wallet</button>
+      <button className="mint_btn" onClick={openOverlay}>Connect Wallet</button>
     </div>
+    </React.Fragment>
   );
 }
 

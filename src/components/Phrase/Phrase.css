@@ -1,3 +1,9 @@
+.Phrase_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Phrase{
     width: 597px;
     padding: 20px 10px;
@@ -5,6 +11,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* position: fixed; */
+    top: 7vh;
+    /* left: 24%; */
+    z-index: 500;
 }
 
 .phrase_heading{
@@ -58,4 +68,21 @@
     width: 90%;
     background-color: white;
     margin: 15px 0 40px;
+}
+
+@media screen and (max-width: 700px) {
+    .Phrase{
+        max-width: 340px;
+    }
+    .phrase_heading{
+        width: 92%;
+    }
+
+    .phrase_text{
+        font-size: 19px;
+    }
+
+    .phrase_header{
+        font-size: 16px;
+    }
 }

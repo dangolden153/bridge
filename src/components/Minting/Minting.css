@@ -102,3 +102,9 @@
     justify-content: center;
     align-items: center;
 }
+
+/* @media screen and (max-width: 700px) {
+    .box{
+        max-width: 340px;
+    }
+} */
